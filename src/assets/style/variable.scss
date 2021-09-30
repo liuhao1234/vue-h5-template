@@ -1,0 +1,8 @@
+// 全局颜色
+$bg-gray:#f5f6f8;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
