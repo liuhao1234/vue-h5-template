@@ -11,6 +11,9 @@ import router from './router/index'
 import store from './store/index'
 // 移动端适配
 import 'lib-flexible'
+
+import moment from 'moment'
+import _ from 'lodash'
 // 全局样式
 import 'vant/lib/index.css';
 import "vue-easytable/libs/theme-default/index.css";
@@ -19,6 +22,9 @@ import './assets/iconfont/iconfont.css'
 import './assets/style/index.scss'
 
 Vue.config.productionTip = false
+
+Vue.prototype.$moment = moment
+Vue.prototype.$lodash = _
 
 Vue.use(Vant)
 Locale.use('zh-CN', zhCN)

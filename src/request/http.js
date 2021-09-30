@@ -2,9 +2,7 @@
  * 请求拦截、相应拦截、错误统一处理
  */
 import axios from 'axios';
-import qs from 'qs';
 import { Notify } from 'vant';
-import store from '../store/index'
 import router from '../router/index'
 // 环境的切换
 axios.defaults.baseURL = process.env.VUE_APP_BASE_API;

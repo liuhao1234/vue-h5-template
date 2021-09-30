@@ -16,23 +16,8 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    // console.log(to)
-    // console.log(from)
-    // console.log(next)
-    // VueRouter.path({
-    //     path:to.path
-    // })
-    // next(to.path)
-    // store.commit("changeTabActive",to.path)
-    // routes.push({
-    //     path:to.path
-    // })
+    console.log(from)
     store.commit("changeTabActive",to.path)
-    if(to.name === "login"){
-        store.commit("clearToken")
-        store.commit("clearRefreshToken")
-        store.commit("changeTabActive","index")
-    }
     next()
 })
 
